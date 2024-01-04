@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/hotel_reservation
+    username: springstudent
+    password: springstudent
+  jpa:
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  main:
+    #web-application-type: none
+    banner-mode: off
+app:
+  jwtSecret: S5arZ8qX8Anvk60LIHdGKZiGyLAyxW+LU1Xw2H4R6Uu1ndlUNPqhpVuKtFsfFvA+
+  jwtCryptoSecret : sBnlg0BGosgPMQju
